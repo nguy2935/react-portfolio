@@ -5,11 +5,6 @@ function Nav() {
     const [activeNav, setActiveNav] = useState('#')
     return (
         <header>
-            <h2>
-            <a href="/">
-            Sophia Nguyen Portfolio
-            </a>
-            </h2>
             <nav>
                 <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}>Home</a>
                 <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}>About</a>

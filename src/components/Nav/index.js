@@ -1,18 +1,8 @@
 import React from "react";
+import {useState} from "react";
 
 function Nav() {
-const navLabels = [
-    {
-        name: "Projects", description: "Here are my work examples",
-    },
-    {
-        name: "Resume", description: "my resume",
-    },
-]; 
-
-function navTitlesSelected(name) {
-    console.log(`${name} clicked`)
-}
+    const [activeNav, setActiveNav] = useState('#')
     return (
         <header>
             <h2>
@@ -21,29 +11,11 @@ function navTitlesSelected(name) {
             </a>
             </h2>
             <nav>
-                <ul className="flex-row">
-                    <li className="mx-2">
-                        <a href="#about">About Me</a>
-                    </li>
-                    <li className="mx-2">
-                        <a href="#Projects">Projects</a>
-                    </li>
-                    <li className="mx-2">
-                        <a href="#Resume">Resume</a>
-                    </li>
-                    <li>
-                        <span>Contact</span>
-                    </li>
-                    {navLabels.map((navTitles) => (
-                     <li className="mx-1"
-                     key={navTitles.name}
-                     >
-                         <span onClick={navTitlesSelected} >
-                             {navTitles.name}
-                         </span>
-                     </li>   
-                    ))}
-                </ul>
+                <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}>Home</a>
+                <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}>About</a>
+                <a href="#projects" onClick={() => setActiveNav('#projects')} className={activeNav === '#about' ? 'active' : ''}>Projects</a>
+                <a href="#resume" onClick={() => setActiveNav('#resume')} className={activeNav === '#about' ? 'active' : ''}>Resume</a>
+                <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#about' ? 'active' : ''}>Contact</a>
             </nav>
         </header>
 

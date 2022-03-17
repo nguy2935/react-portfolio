@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #99f0ff;
+    --secondary: #F7F3E3;
+    --tertiary: #ECF0F1;
+    --dark: #0D1321;
+    --light: #ffffff;
+}
+
+main {
+    margin: 0 auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: var(--primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.my-5 {
+    margin-top: var(--spacing-five);
+    margin-bottom: var(--spacing-five);
+  }
+  

@@ -25,6 +25,12 @@ function navTitlesSelected(name) {
                     <li className="mx-2">
                         <a href="#about">About Me</a>
                     </li>
+                    <li className="mx-2">
+                        <a href="#Projects">Projects</a>
+                    </li>
+                    <li className="mx-2">
+                        <a href="#Resume">Resume</a>
+                    </li>
                     <li>
                         <span>Contact</span>
                     </li>

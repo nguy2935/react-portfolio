@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Cantarell&family=Georama&family=Josefin+Sans:wght@500&family=Sora:wght@800&family=Staatliches&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -28,13 +30,50 @@ h1, h2, h3, h4, h5, h6 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+p {
+    font-family: 'Georama', sans-serif;
+}
+
 h1 {
     font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1rem;
+}
+.mainTitle {
+    font-family: 'Allura', cursive;
+    text-align: center;
+}
+
+.subTitle {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+
+h3 { 
+    font-size: 25px;
+    font-family: 'Staatliches', cursive;
+}
+
+h4 {
+    font-family: Sora;
+}
+
+.content-text {
+    background-color: white;
+    padding: 40px;
+    width: 25%;
 }
 
 .my-5 {
     margin-top: var(--spacing-five);
     margin-bottom: var(--spacing-five);
+    padding: 50px;
+  }
+
+  img {
+      width: 25%;
   }
 
   .img-thumbnail {
@@ -50,4 +89,64 @@ h1 {
       margin-top: 8rem;
       height: 100vh;
   }
+
+  .aboutInfo {
+      display:inline-block;
+  }
+
+  nav {
+      background: var(--secondary);
+      padding: 20px;
+  }
+
+  nav a {
+      color: var(--dark);
+      padding: 10px;
+      text-decoration: none;
+  }
   
+  nav a:hover {
+      color: var(--tertiary);
+  }
+
+.resume-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
+
+.resume-container > div {
+    background: var(--secondary);
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid black;
+    transition: var(--transition);
+}
+
+.resume-container > div:hover {
+    background: transparent;
+    border: 1px solid black;
+}
+
+.resume-content {
+    border-radius: 1rem;
+    transition: var(--transition);
+}
+
+.haveSkills, .previousWork{
+    display: inline-block;
+    background: var(--secondary);
+    padding: 2rem 20rem;
+    border-radius: 1rem;
+    border: 1px solid black;
+    transition: var(--transition);
+}
+
+.haveSkills:hover, .previousWork:hover{ 
+    transition: var(--transition);
+    background: var(--tertiary);
+}
+
+.details {
+    font-family: Cantarell;
+}
